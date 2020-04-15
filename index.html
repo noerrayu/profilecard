@@ -35,7 +35,7 @@
             font-family: tahoma;
             font-size: 14px;
             font-weight: 400;
-            color: #8bc34a;
+            color: #65A0AE;
             background-color: white;
             text-align: center;
             position: relative;
@@ -49,7 +49,7 @@
             height: 50px;
             transition: transform 0.5s cubic-bezier(0.42, 0.04, 0.13, 0.92);
             border-radius: 50%;
-            background-color: #8bc34a;
+            background-color: #65A0AE;
             position: absolute;
             top: -70px;
             left: 50%;
@@ -57,7 +57,7 @@
             transform: translateX(-50%) scale(7);
         }
 
-        .profile:hover::before {
+        .profile:hover:before {
             transition: transform 0.7s cubic-bezier(0.77, 0.09, 0, 1.31);
             transform: translateX(-50%) translateY(200%) scale(25);
         }
@@ -74,7 +74,7 @@
         }
 
         .profile:hover .profile-stats {
-            background-color: #8bc34a;
+            background-color: #65A0AE;
         }
 
         .profile-header {
@@ -85,8 +85,12 @@
             border-radius: 50%;
             width: 120px;
             height: 120px;
-            border: 5px solid #8bc34a;
+            border: 5px solid #65A0AE;
             transition: border-color 0.4s ease-out .1s;
+        }
+
+        .profile:hover .profile-avatar {
+            transition-delay: 0.2s;
         }
 
         .profile-name {
@@ -143,7 +147,7 @@
 
         .profile-value {
             font-size: 30px;
-            color: #8bc34a;
+            color: #65A0AE;
             font-weight: 700;
         }
 
@@ -156,8 +160,8 @@
         }
 
         .profile-social {
-            border: 4px solid #8bc34a;
-            color: #8bc34a;
+            border: 4px solid #65A0AE;
+            color: #65A0AE;
             border-radius: 50%;
             transition: color 0.4s ease-out 0.3s;
             width: 18px;
@@ -194,7 +198,7 @@
                     <div class="profile-group">
                         <span class="profile-value">65%
                         </span>
-                        <span class="profile-param">C</span>
+                        <span class="profile-param">C Language</span>
                     </div>
 
                     <div class="profile-group">
@@ -214,17 +218,16 @@
                 </div>
 
                 <footer class="profile-socials">
-                    <a href="" class="profile-social">
+                    <a href="https://twitter.com/Noerrayu" class="profile-social">
                         <i class="fa fa-twitter"></i>
                     </a>
 
 
-                    <a href="" class="profile-social">
-                        <i class="fa fa-instagram"></i>
+                    <a href="https://github.com/noerrayu" class="profile-social">
+                        <i class="fa fa-github"></i>
                     </a>
 
-
-                    <a href="" class="profile-social">
+                    <a href="https://www.linkedin.com/in/noer-ayu/" class="profile-social">
                         <i class="fa fa-linkedin"></i>
                     </a>
                 </footer>

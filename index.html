@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- tampilan menyesuaikan pada browser mobile device yang berbeda -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- mendeteksi mobile device yang digunakan untuk disesuaikan tampilannya -->
+    <script src="mobile-detect.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <title>profile card hover effect</title>
     <!-- link bootstrap untuk icon fontawesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -93,7 +97,7 @@
             transition-delay: 0.2s;
         }
 
-        .profile-name {
+        .name {
             margin-top: 10px;
             margin-bottom: 0;
             font-size: 30px;
@@ -170,8 +174,24 @@
             position: relative;
             margin-right: 10px;
         }
-    </style>
 
+        @media screen and (max-width: 400px) {
+            div {
+                font-size: 12px;
+            }
+
+            .profile-value {
+                font-size: 24px;
+            }
+
+            .profile-stats {
+                min-width: 340px;
+            }
+
+
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -235,6 +255,8 @@
             </article>
         </div>
     </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
